@@ -1,0 +1,13 @@
+apiversion: v1
+kind: Pod
+metadata: 
+  name: frontend
+  labes: 
+    project: roboshop
+    component: frontend
+    environment: dev
+    version: v1
+  spec:
+    containers: 
+      - name: frontend
+        image: nginx
