@@ -4,7 +4,8 @@ kind: pod
 metadata:
   name: error-test
 spec:
-  containers:
-  - name: nginx
-    image: ngdsf
-    
+  # containers:
+  # - name: nginx
+  #   image: ngdsf
+  - name: almalinux
+    image: almalinux:9
