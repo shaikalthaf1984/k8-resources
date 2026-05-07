@@ -5,8 +5,8 @@ metadata:
   name: service-demo
   labels:
     project: roboshop
-    # component: frontend
-    # environment: development
+    component: frontend
+    environment: development
 
 spec:
   containers:
