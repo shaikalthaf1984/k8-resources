@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: nginx
+  labels:
+    purpose: dp-demo
+    project: roboshop
+
+spec:
+  replicas: 4
+
+  selector:
+    matchLabels:
+      purpose: dp-demo
+      project: roboshop
+
+  template:
+    metadata:
+      labels:
+        purpose: dp-demo
+        project: roboshop
+
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:trixie-perl
